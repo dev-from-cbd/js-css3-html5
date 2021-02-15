@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+ font-size: 62.5%;
+ box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    background-color: #fff;
+    color: #000;
+    position: relative;
+}
+
+h1, 
+h2, 
+h3, 
+h4 {
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 114rem;
+    margin: 0 auto;
+}
+
+@media only screen (max-width: 1200px) {
+    .container {
+        padding: 0 3rem;
+    }
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    z-index: 1;
+}
+
+.header img {
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+    width: 60rem;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 996px) {
+    .header {
+        min-height: 60vh;
+    }
+
+    .header img {
+        width: 50rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header img {
+        width: 40rem;
+    }
+}
+
+@media only screen and (max-width: 567px) {
+    .header {
+        min-height: 100vh;
+    }
+
+    .header img {
+        width: 35rem;
+    }
+}
+
+.nav {
+    color: #fff;
+}
+
+.top-nav {
+    display: none;
+}
+
+/* just for https://validator.w3.org/#validate_by_upload */
+.section__h2__none {
+    display: none;
+}
+/* just for https://validator.w3.org/#validate_by_upload */
