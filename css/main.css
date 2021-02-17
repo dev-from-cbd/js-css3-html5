@@ -18,6 +18,7 @@ body {
     background-color: #fff;
     color: #000;
     position: relative;
+    z-index: 0;
 }
 
 h1, 
@@ -44,7 +45,7 @@ li {
     margin: 0 auto;
 }
 
-@media only screen (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
     .container {
         padding: 0 3rem;
     }
@@ -98,6 +99,145 @@ li {
 
 .top-nav {
     display: none;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h1 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.logo h1 span {
+    font-weight: bold;
+    color: #dd9a05;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 0.5rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+    color: #fff;
+    padding: 0.8rem 1rem;
+    transition: all 300ms ease-in-out;
+}
+
+.nav-link:hover {
+    border-radius: 0.3rem;
+    background-color: #dd9a05;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        height: 100%;
+        max-width: 40rem;
+        background-color: #fff;
+        transition: all 500ms ease-in-out;
+        z-index: 100;
+    }
+
+    .menu.show {
+        left: 0;
+    }
+
+    .top-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #dd9a05;
+        padding: 1rem 1.6rem;
+    }
+
+    .top-nav .logo span {
+        color: #fff;
+    }
+
+    .top-nav .close {
+        color: #fff;
+        font-size: 2.3rem;
+        padding: 1rem;
+        cursor: pointer;
+    }
+
+    .hamburger {
+        display: block;
+        color: #fff;
+        font-size: 2.3rem;
+        padding: .5rem;
+        cursor: pointer; 
+    }
+
+    .nav-link:link,
+    .nav-link:visited {
+        display: block;
+        font-size: 1.7rem;
+        color: #222;
+        padding: 1rem 1rem;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: start;
+        padding: 1rem 1.6rem;
+    }
+
+    body.show::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 1;
+    }
+
+    .nav.show {
+        background-color: rgba(0, 0, 0, .8);
+    }
+}
+
+.hero {
+    position: absolute;
+    top: 50%;
+    transform: translate(25%, -50%);
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 4.5rem;
+}
+
+.hero h3 {
+    font-weight: 400;
+}
+
+.hero h4 {
+    font-size: 2rem;
+}
+
+.hero h4 span {
+    color: #dd9a05;
+    text-decoration: underline;
 }
 
 /* just for https://validator.w3.org/#validate_by_upload */
