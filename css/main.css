@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1.6rem;
     font-weight: 400;
     background-color: #fff;
@@ -79,7 +79,7 @@ li {
 
 @media only screen and (max-width: 768px) {
     .header img {
-        width: 40rem;
+        width: 60vh;
     }
 }
 
@@ -89,11 +89,12 @@ li {
     }
 
     .header img {
-        width: 35rem;
+        width: 35vh;
     }
 }
 
 .nav {
+    padding: 1.6rem 0;
     color: #fff;
 }
 
@@ -104,7 +105,8 @@ li {
 .navigation {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: center; */
+    justify-content: space-between; 
 }
 
 .logo h1 {
@@ -146,7 +148,8 @@ li {
     .menu {
         position: fixed;
         top: 0;
-        left: -100%;
+        /* left: 0; */
+        left: -100%; 
         width: 80%;
         height: 100%;
         max-width: 40rem;
@@ -192,6 +195,7 @@ li {
         font-size: 1.7rem;
         color: #222;
         padding: 1rem 1rem;
+        /* padding: 1rem 1rem; */
     }
 
     .nav-list {
@@ -212,13 +216,13 @@ li {
     }
 
     .nav.show {
-        background-color: rgba(0, 0, 0, .8);
+        background-color: rgba(0, 0, 0, 0.8);
     }
 }
 
 .hero {
     position: absolute;
-    top: 50%;
+    top: 45%; 
     transform: translate(25%, -50%);
     color: #fff;
 }
@@ -240,8 +244,156 @@ li {
     text-decoration: underline;
 }
 
+.hero a:link,
+.hero a:visited {
+    display: inline-block;
+    padding: 0.8rem 2.5rem;
+    border: 1px solid #dd9a05;
+    background-color: #dd9a05;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.hero a:hover {
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 996px) {
+    .hero {
+        transform: translate(10%, -50%);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero h2 {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 567px) {
+    .hero {
+        top: 35%;
+    }
+
+    .hero h2 {
+        font-size: 3rem;
+    }
+
+    .hero h3 {
+        font-size: 1.6rem;
+    }
+
+    .hero h4 {
+        font-size: 1.6rem;
+    }
+}
+
+.icons {
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    color: #fff;
+}
+
+.icons span:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.icons span {
+    font-size: 2rem;
+    cursor: pointer;
+    transform: all 300ms ease-in-out;
+}
+
+.icons span:hover {
+    color: #dd9a05;
+}
+
+@media only screen and (max-width: 567px) {
+    .icons {
+        display: none;
+    }
+}
+
 /* just for https://validator.w3.org/#validate_by_upload */
 .section__h2__none {
     display: none;
+    bottom: 5%;
 }
 /* just for https://validator.w3.org/#validate_by_upload */
+
+/*
+@media only screen and (max-width: 1300px) {  
+    .header img {
+        width: 40vw;
+    }
+}
+*/
+
+/*
+@media only screen and (max-width: 1201px) {  
+    .hero {
+        top: 15%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {  
+    .hero {
+        top: 15%;
+    }
+}
+
+@media only screen and (min-width: 1100px) {  
+    .hero {
+        top: 15%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {  
+    .hero {
+        top: 15%;
+    }
+}
+
+@media only screen and (min-width: 900px) {  
+    .hero {
+        top: 15%;
+    }
+}
+
+@media only screen and (min-width: 800px) {  
+    .hero {
+        top: 15%;
+    }
+}
+
+@media only screen and (min-width: 700px) {  
+    .hero {
+        top: 25%;
+    }
+}
+
+@media only screen and (min-width: 600px) {  
+    .hero {
+        top: 45%;
+    }
+}
+
+@media only screen and (min-width: 500px) {  
+    .hero {
+        top: 45%;
+    }
+}
+
+@media only screen and (min-width: 400px) {  
+    .hero {
+        top: 55%;
+    }
+}
+
+@media only screen and (min-width: 300px) {  
+    .hero {
+        top: 55%;
+    }
+}
+*/
