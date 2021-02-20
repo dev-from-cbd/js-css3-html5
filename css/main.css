@@ -98,6 +98,16 @@ li {
     color: #fff;
 }
 
+.nav.fix-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    z-index: 999;
+}
+
 .top-nav {
     display: none;
 }
@@ -111,7 +121,7 @@ li {
 
 .logo h1 {
     font-size: 2.5rem;
-    color: #fff;
+    color: green;
 }
 
 .logo h1 span {
@@ -408,6 +418,31 @@ a.btn:active {
 
     .right p {
         font-size: 1.5rem;
+    }
+
+    a.btn {
+        padding: .7rem 1.8rem;
+    }
+
+    .left img {
+        height: 27rem;
+        max-width: 25rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .about-center {
+        grid-template-columns: 1fr;
+        gap: 3rem 0;
+    }
+
+    .left {
+        text-align: center;
+    }
+
+    .left img {
+        height: 40rem;
+        max-width: 90%;
     }
 }
 

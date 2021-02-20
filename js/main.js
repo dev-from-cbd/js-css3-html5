@@ -20,6 +20,16 @@ navClose.addEventListener("click", () => {
     }
 });
 
+const navHeight = navBar.getBoundingClientRect().height;
+window.addEventListener("scroll", ()=>{
+    const scrollHeight = window.pageYOffset;
+    if (scrollHeight > navHeight) {
+        navBar.classList.add("fix-nav");
+    } else {
+        navBar.classList.remove("fix-nav");
+    }
+});
+
 new TypeIt("#type1", {
     speed: 120,
     loop: true,
@@ -38,10 +48,10 @@ new TypeIt("#type1", {
         loop: true,
         waitUntilVisible: true,
     })
-        .type("a Barber", { delay: 400 })
+        .type("Services", { delay: 400 })
         .pause(500)
         .delete(9)
-        .type("an Expert", { delay: 400 })
+        .type("Quality", { delay: 400 })
         .pause(500)
         .delete(9)
         .go();
