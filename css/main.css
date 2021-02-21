@@ -446,6 +446,12 @@ a.btn:active {
     }
 }
 
+.iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
+
 /* just for https://validator.w3.org/#validate_by_upload 
 .section__h2__none {
     display: none;
