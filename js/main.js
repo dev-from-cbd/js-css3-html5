@@ -80,3 +80,23 @@ gsap.from(".icon span", {
 });
 
 
+const glide = document.querySelector(".glide");
+if (glide)
+    new Glide(glide, {
+        type: "carousel" , 
+        startAt: 0, 
+        perView: 3, 
+        gap: 30, 
+        hoverpause: true, 
+        // autoplay: true, 
+        animationDuration: 800,
+        animationTimingFunc: "ease-in-out", 
+        breakpoints: {
+            996: {
+                perView: 2,
+            },
+            768: {
+                perView: 1,
+            },
+        }, 
+    }).mount();
