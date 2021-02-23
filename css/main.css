@@ -450,6 +450,115 @@ a.btn:active {
     background-color: #000;
 }
 
+.theme .title {
+    color: #fff;
+}
+
+.services-center {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 3rem;
+}
+
+.service {
+    color: #fff;
+    background-color: #111;
+
+    padding: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    transition: all 300ms ease-in-out;
+
+    /* margin: 2rem; */
+}
+
+.service span {
+    color: #dd9a05;
+    font-size: 4rem;
+    transition: all 300ms ease-in-out;
+}
+
+.service h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.service p {
+    font-size: 1.4rem;
+    color: #f1f1f1;
+}
+
+.service:hover {
+    background-color: #dd9a05;
+}
+
+.service:hover span {
+    color: #fff;
+}
+
+.testimonials-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+}
+
+.testimonials-box:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.testimonials-box h4 {
+    font-size: 1.8rem;
+    color: #888;
+    font-weight: 500;
+}
+
+.testimonials-box .testimonials-alt {
+    width: 100%;
+    position: relative;
+    height: .4rem;
+    background-color: #ccc;
+    border-radius: 0.5rem;
+}
+
+.testimonials-box .testimonials-bar {
+    background-color: #dd9a05;
+    height: .4rem;
+}
+
+.testimonials-box .first-testimonial {
+    width: 95%;
+}
+
+.testimonials-box .second-testimonial {
+    width: 90%;
+}
+
+.testimonials-box .third-testimonial {
+    width: 80%;
+}
+
+.testimonials-box span {
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    font-size: 1.4rem;
+}
+
+.testimonials-right h3 {
+    margin-bottom: 1rem;
+}
+
+.testimonials-right p {
+    margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .testimonials-center {
+        grid-template-columns: 1fr;
+        gap: 1;
+    }
+}
+
 .iframe {
     width: 100%;
     height: 300px;
@@ -510,31 +619,31 @@ a.btn:active {
 
 @media only screen and (min-width: 700px) {  
     .hero {
-        top: 25%;
+        top: 15%;
     }
 }
 
 @media only screen and (min-width: 600px) {  
     .hero {
-        top: 45%;
+        top: 15%;
     }
 }
 
 @media only screen and (min-width: 500px) {  
     .hero {
-        top: 45%;
+        top: 15%;
     }
 }
 
 @media only screen and (min-width: 400px) {  
     .hero {
-        top: 55%;
+        top: 15%;
     }
 }
 
 @media only screen and (min-width: 300px) {  
     .hero {
-        top: 55%;
+        top: 15%;
     }
 }
 */
