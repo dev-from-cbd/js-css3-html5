@@ -635,6 +635,15 @@ a.btn:active {
   color: #dd9a05;
 }
 
+.form h2 {
+    margin-right: 2rem;
+    font-size: 1.5rem;
+}
+
+.span__h3 {
+    font-weight: 500;
+  }
+  
 .iframe {
   width: 100%;
   height: 300px;
