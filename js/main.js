@@ -30,6 +30,27 @@ window.addEventListener("scroll", () => {
   }
 });
 
+const links = [...document.querySelectorAll(".scroll-link")];
+
+links.map((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const id = e.target.getAttribute("href").slice(1);
+    const el = document.getElementById(id);
+    let position = el.offsetTop - navHeight;
+
+    window.scrollTo({
+      top: position,
+      left: 0,
+    });
+
+    navBar.classList.remove("show");
+    menu.classList.remove("show");
+    document.body.classList.remove("show");
+  });
+});
+
 new TypeIt("#type1", {
   speed: 120,
   loop: true,
@@ -99,3 +120,5 @@ if (glide)
       },
     },
   }).mount();
+
+AOS.init();

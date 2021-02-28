@@ -7,6 +7,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 62.5%;
   box-sizing: border-box;
 }
@@ -675,36 +676,24 @@ a.btn:active {
   .left div .content span {
     font-size: 1.5rem;
   }
-
-  /*
-  .form h2 {
-    margin-bottom: 1rem;
-    font-size: 2rem;
-  }
-
-  .form input,
-  .form textarea {
-    font-family: "Poppins", sans-serif;
-    font-size: 1.6rem;
-    padding: 1rem 0;
-    text-indent: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 0.5rem;
-    margin-bottom: 1rem;
-    width: 100%;
-    outline: none;
-  }
-
-  .form textarea {
-    max-width: 55.5rem;
-    height: 16rem;
-    margin-bottom: 3rem;
-  }
-  */
 }
 
 .span__h3 {
   font-weight: 500;
+}
+
+.footer {
+  background-color: #000;
+  padding: 1.6rem 1rem;
+  text-align: center;
+}
+
+.footer p {
+  color: #fff;
+}
+
+.footer p span {
+  color: #dd9a05;
 }
 
 .iframe {
