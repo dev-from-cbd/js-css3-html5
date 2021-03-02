@@ -8,8 +8,8 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 62.5%;
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 body {
@@ -19,7 +19,8 @@ body {
   background-color: #fff;
   color: #000;
   position: relative;
-  z-index: 0;
+  /* z-index: 0; */
+  z-index: 1;
 }
 
 h1,
@@ -56,7 +57,11 @@ li {
   position: relative;
   width: 100%;
   height: 100vh;
-  background-color: #000;
+
+  min-height: 100vh;
+
+  /* background-color: #000; */
+  background: #000;
   z-index: 1;
 }
 
@@ -80,7 +85,8 @@ li {
 
 @media only screen and (max-width: 768px) {
   .header img {
-    width: 60vh;
+    /* width: 60vh; */
+    width: 40rem;
   }
 }
 
@@ -90,13 +96,14 @@ li {
   }
 
   .header img {
-    width: 35vh;
+    /* width: 35vh; */
+    width: 35rem;
   }
 }
 
 .nav {
   padding: 1.6rem 0;
-  color: #fff;
+  /* color: #fff; */
 }
 
 .nav.fix-nav {
@@ -104,14 +111,17 @@ li {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: #dd9a05;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   z-index: 999;
 }
 
+/*
 .top-nav {
   display: none;
 }
+*/
 
 .navigation {
   display: flex;
@@ -122,7 +132,8 @@ li {
 
 .logo h1 {
   font-size: 2.5rem;
-  color: green;
+  /* color: green; */
+  color: #fff;
 }
 
 .logo h1 span {
@@ -151,6 +162,10 @@ li {
   background-color: #dd9a05;
 }
 
+.top-nav {
+  display: none;
+}
+
 .hamburger {
   display: none;
 }
@@ -162,8 +177,8 @@ li {
     /* left: 0; */
     left: -100%;
     width: 80%;
-    height: 100%;
     max-width: 40rem;
+    height: 100%;
     background-color: #fff;
     transition: all 500ms ease-in-out;
     z-index: 100;
@@ -205,7 +220,7 @@ li {
     display: block;
     font-size: 1.7rem;
     color: #222;
-    padding: 1rem 1rem;
+    padding: 1rem 0;
     /* padding: 1rem 1rem; */
   }
 
