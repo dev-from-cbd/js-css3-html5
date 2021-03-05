@@ -755,6 +755,7 @@ a.btn:active {
 .opening-hours__li {
   color: white;
 }
+
 @media only screen and (max-width: 768px) {
   .contact-center {
     grid-template-columns: 1fr;
@@ -826,4 +827,308 @@ a.btn:active {
 
   padding-left: 10px;
   padding-right: 10px;
+}
+
+/* Special for iPad Pro - landscape view */
+@media only screen and (max-width: 1366px) {
+  .hero {
+    top: 35%;
+    margin-left: 5rem;
+  }
+
+  .banner {
+    margin-right: 5rem;
+    top: 20%;
+  }
+
+  .about-center {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-center__img {
+    display: block;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-center__div {
+    margin-top: 5rem;
+    margin-left: 10rem;
+  }
+
+  .about-center__h1 {
+    margin-left: 40rem;
+  }
+
+  .about-center__btn {
+    margin-top: 5rem;
+    margin-left: 37rem;
+  }
+
+  .services-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3rem 3rem;
+    margin-top: 20rem;
+  }
+
+  .skills {
+    height: 100vh;
+  }
+
+  .skills-center {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .skills-left {
+    margin-left: 15rem;
+  }
+
+  .skills-box .html {
+    margin-top: 0.4rem;
+  }
+
+  .skills-box .html {
+    margin-bottom: 1rem;
+  }
+
+  .fas__fa-star__green {
+    margin-bottom: 1rem;
+  }
+
+  .skills-center__right {
+    margin-top: -10rem;
+  }
+
+  .skills-bar__html__a {
+    margin-top: 1rem;
+  }
+
+  .skills-box .css {
+    margin-top: 0.1rem;
+  }
+
+  .skills-center_h3 {
+    margin-top: 20rem;
+    margin-left: 37rem;
+  }
+
+  .a__reviews {
+    margin-top: 7rem;
+    margin-left: 47rem;
+  }
+
+  .p__reviews {
+    margin-top: 7rem;
+    margin-left: 9rem;
+    margin-right: 9rem;
+  }
+
+  .teams-center {
+    margin-top: 30rem;
+  }
+
+  .team {
+    height: 37rem;
+  }
+
+  .contact {
+    height: 100vh;
+  }
+
+  .contact-center {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .right__img {
+    display: none;
+  }
+
+  .contact-center__h2 {
+    margin-top: 6rem;
+    margin-left: 26rem;
+  }
+
+  .contact-center__p {
+    margin-left: 5rem;
+    margin-right: 25rem;
+  }
+
+  .div__contacts {
+    margin-left: 17rem;
+  }
+
+  .schedule {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .schedule__img {
+    margin-top: 13rem;
+    margin-left: 33rem;
+  }
+
+  .opening-hours {
+    margin-top: 12rem;
+    margin-left: 5rem;
+  }
+
+  .iframe {
+    height: 88vh;
+  }
+}
+
+/* Special for iPad Pro - Portrait mode, not landscape view */
+@media only screen and (max-width: 1024px) {
+  .hero {
+    top: 25%;
+  }
+
+  .banner {
+    top: 35%;
+  }
+
+  .about-center {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-center__img {
+    display: block;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-center__div {
+    margin-top: 15rem;
+  }
+
+  .about-center__h1 {
+    margin-left: 40rem;
+  }
+
+  .about-center__btn {
+    margin-top: 5rem;
+    margin-left: 37rem;
+  }
+
+  .services-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem 3rem;
+
+    margin-top: 20rem;
+  }
+
+  .skills {
+    height: 100vh;
+  }
+
+  .skills-center {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skills-left {
+    margin-left: 15rem;
+  }
+
+  .skills-box .html {
+    margin-top: 0.4rem;
+  }
+
+  .skills-box .html {
+    margin-bottom: 1rem;
+  }
+
+  .fas__fa-star__green {
+    margin-bottom: 1rem;
+  }
+
+  .skills-bar__html__a {
+    margin-top: 1rem;
+  }
+
+  .skills-box .css {
+    margin-top: 0.1rem;
+  }
+
+  .skills-center_h3 {
+    margin-top: 20rem;
+    margin-left: 24rem;
+  }
+
+  .a__reviews {
+    margin-top: 7rem;
+    margin-left: 37rem;
+  }
+
+  .p__reviews {
+    margin-top: 7rem;
+    margin-left: 5rem;
+    margin-right: 4rem;
+  }
+
+  .teams-center {
+    margin-top: 30rem;
+  }
+
+  .team {
+    height: 37rem;
+  }
+
+  .contact {
+    height: 100vh;
+  }
+
+  .contact-center {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .right__img {
+    height: 40rem;
+    width: 40rem;
+
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    margin-left: 27rem;
+  }
+
+  .contact-center__h2 {
+    margin-left: 40rem;
+  }
+
+  .contact-center__p {
+    margin-left: 9rem;
+    margin-right: 9rem;
+  }
+
+  .div__contacts {
+    margin-left: 22rem;
+  }
+
+  .schedule {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .schedule__img {
+    margin-top: 13rem;
+    margin-left: 33rem;
+  }
+
+  .opening-hours {
+    margin-left: 24rem;
+  }
+
+  .iframe {
+    height: 91vh;
+  }
 }
