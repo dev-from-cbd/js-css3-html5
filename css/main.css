@@ -645,7 +645,7 @@ a.btn:active {
 
 .contact {
   width: 100vw;
-  height: 95vh;
+  height: 100vh;
 }
 
 .contact-center {
@@ -654,13 +654,14 @@ a.btn:active {
   gap: 3rem;
 }
 
+/*
 .div__contacts {
   margin-top: 5rem;
 }
+*/
 
 .left h2 {
   font-size: 2rem;
-
   margin-bottom: 2rem;
 }
 
@@ -949,6 +950,7 @@ a.btn:active {
     display: none;
   }
 
+  /*
   .contact-center__h2 {
     margin-top: 6rem;
     margin-left: 26rem;
@@ -962,6 +964,7 @@ a.btn:active {
   .div__contacts {
     margin-left: 17rem;
   }
+*/
 
   .schedule {
     display: flex;
@@ -1110,9 +1113,11 @@ a.btn:active {
     margin-right: 9rem;
   }
 
+  /*
   .div__contacts {
     margin-left: 22rem;
   }
+*/
 
   .schedule {
     display: flex;
