@@ -46,6 +46,15 @@ li {
   margin: 0 auto;
 }
 
+.hero {
+  position: absolute;
+  top: 50%;
+  transform: translate(25%, -50%);
+  color: #fff;
+
+  left: 6rem;
+}
+
 @media only screen and (max-width: 1200px) {
   .container {
     padding: 0 3rem;
@@ -946,25 +955,20 @@ a.btn:active {
     flex-direction: row;
   }
 
-  .right__img {
-    display: none;
-  }
-
-  /*
   .contact-center__h2 {
     margin-top: 6rem;
     margin-left: 26rem;
   }
 
   .contact-center__p {
-    margin-left: 5rem;
-    margin-right: 25rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
-  .div__contacts {
-    margin-left: 17rem;
+  .right__img {
+    margin-top: 6rem;
+    height: 40rem;
   }
-*/
 
   .schedule {
     display: flex;
@@ -1135,5 +1139,21 @@ a.btn:active {
 
   .iframe {
     height: 91vh;
+  }
+}
+
+/* Special for iPad - landscape view */
+@media only screen and (max-height: 768px) and (max-device-width: 1024px) {
+  .hero {
+    left: -10rem;
+    margin-top: 10rem;
+  }
+
+  .banner {
+    top: 5rem;
+  }
+
+  .icons {
+    left: 3rem;
   }
 }
