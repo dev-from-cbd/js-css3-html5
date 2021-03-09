@@ -1473,11 +1473,11 @@ a.btn:active {
   }
 
   .schedule__img {
-    margin-top: -9rem;
+    margin-top: -11rem;
   }
 
   .opening-hours__ul {
-    margin-top: -5rem;
+    margin-top: -9rem;
     margin-left: -19rem;
   }
 
@@ -1488,5 +1488,45 @@ a.btn:active {
   .copyright {
     display: flex;
     flex-direction: column;
+  }
+}
+
+/* Special for iPhone X - landscape view */
+@media only screen and (max-height: 375px) and (max-device-width: 812px) {
+  .banner {
+    display: none;
+  }
+
+  .nav-link__home {
+    display: none;
+  }
+
+  .nav-link__about-me {
+    display: none;
+  }
+
+  .hero {
+    margin-left: 35rem;
+  }
+
+  .title {
+    margin-top: -4rem;
+  }
+
+  .title__h1 {
+    margin-top: -15rem;
+  }
+
+  .about-center {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .about-center__img {
+    display: none;
+  }
+
+  .about-center__h1 {
+    margin-top: -5rem;
   }
 }
