@@ -1527,6 +1527,396 @@ a.btn:active {
   }
 
   .about-center__h1 {
+    display: none;
+  }
+
+  .about-center__p {
+    margin-top: -7rem;
+  }
+
+  .btn.about-center__btn {
+    display: none;
+  }
+
+  .services-center {
+    margin-top: -3rem;
+  }
+
+  .my-services__h1 {
+    margin-top: 3rem;
+  }
+
+  .fas {
+    display: none;
+  }
+
+  .far {
+    display: none;
+  }
+
+  .service {
+    margin: -1rem;
+    padding: 1rem;
+  }
+
+  .scissors {
+    display: none;
+  }
+
+  .skills-box {
+    display: none;
+  }
+
+  .skills-center_h3 {
+    display: none;
+  }
+
+  .reviews-about-my-works__h1 {
+    margin-top: 5rem;
+  }
+
+  .p__reviews {
+    margin-top: 5rem;
+    margin-right: 5rem;
+  }
+
+  .a__reviews {
+    margin-left: 30rem;
+  }
+
+  .glide__track {
+    margin-top: -8rem;
+  }
+
+  .contacts__h1 {
+    margin-top: 3rem;
+  }
+
+  .contact-center__h2 {
+    display: none;
+  }
+
+  .contact-center__p {
+    display: none;
+  }
+
+  .div__contacts__contact-center {
+    margin-top: -6rem;
+  }
+
+  .content__h3 {
+    display: none;
+  }
+
+  .content__span {
+    display: none;
+  }
+
+  .section-theme__h1 {
+    margin-top: 3rem;
+  }
+
+  .section-theme__opening-hours {
+    height: 93vh;
+  }
+
+  .schedule__img {
+    display: none;
+  }
+
+  .opening-hours__ul {
+    margin-top: -14rem;
+    margin-left: -48.5rem;
+  }
+
+  .iframe {
+    height: 67vh;
+  }
+}
+
+/* Special for iPhone 6/7/8 Plus - not landscape view */
+@media only screen and (max-device-width: 414px) and (max-height: 736px) {
+  .banner {
+    display: none;
+  }
+
+  .hero {
+    margin-top: 15rem;
+    margin-left: 5rem;
+  }
+
+  .about {
+    height: 90vh;
+  }
+
+  .up {
+    margin-top: -8rem;
+  }
+
+  .about-center__h1 {
+    display: none;
+  }
+
+  .about-center__p {
+    margin-top: -9rem;
+    margin-left: -3rem;
+    margin-right: -7rem;
+  }
+
+  .about-center__btn {
+    margin-top: 3rem;
+    margin-left: 3rem;
+  }
+
+  .my-services__h1 {
+    margin-top: -1rem;
+  }
+
+  .services-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 1rem;
+    margin-top: -4rem;
+  }
+
+  .scissors {
+    display: none;
+  }
+
+  .reviews-about-my-works__section {
+    height: 95vh;
+  }
+
+  .reviews-about-my-works__h1 {
+    margin-top: 1rem;
+  }
+
+  .skills-left {
+    display: none;
+  }
+
+  .skills-center_h3 {
+    display: none;
+  }
+
+  .p__reviews {
+    margin-top: 20rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .a__reviews {
+    margin-top: 8rem;
+    margin-left: 9rem;
+  }
+
+  .contact {
+    height: 93vh;
+  }
+
+  .contact-center__h2 {
+    display: none;
+  }
+
+  .contact-center__p {
+    display: none;
+  }
+
+  .div__contacts__contact-center {
+    margin-top: -1rem;
+  }
+
+  .div__contacts {
+    margin-left: 1rem;
+    padding: 1rem;
+  }
+
+  .section-theme__opening-hours {
+    height: 95vh;
+  }
+
+  .schedule__img {
+    display: none;
+  }
+
+  .opening-hours__ul {
+    margin-top: -1rem;
+    margin-left: -17.5rem;
+  }
+
+  .iframe {
+    height: 67vh;
+  }
+
+  .copyright {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -1rem;
+  }
+}
+
+/* Special for iPhone 6/7/8 Plus - landscape view */
+@media only screen and (max-device-width: 736px) and (max-height: 414px) {
+  .hero {
+    margin-top: 10rem;
+    margin-left: 4.5rem;
+  }
+
+  .banner {
+    margin-top: -16rem;
+    margin-left: 24.5rem;
+  }
+
+  .section.about {
+    height: 82vh;
+  }
+
+  .up {
+    margin-top: -10rem;
+  }
+
+  .about-center__h1 {
+    display: none;
+  }
+
+  .about-center__p {
+    margin-top: -12rem;
+    margin-left: -3rem;
+    margin-right: -3rem;
+  }
+
+  .btn.about-center__btn {
+    display: none;
+  }
+
+  .my-services__h1 {
     margin-top: -5rem;
+  }
+
+  .services-center {
+    margin-top: -4rem;
+  }
+
+  .service {
+    margin: -1rem;
+    padding: 1rem;
+  }
+
+  .scissors {
+    display: none;
+  }
+
+  .reviews-about-my-works__section {
+    height: 88vh;
+  }
+
+  .skills-left {
+    display: none;
+  }
+
+  .skills-center_h3 {
+    display: none;
+  }
+
+  .p__reviews {
+    margin-top: 13rem;
+    margin-left: 3rem;
+    margin-right: 2rem;
+  }
+
+  .btn.a__reviews {
+    display: none;
+  }
+
+  .testimonials__section {
+    height: 86vh;
+  }
+
+  .testimonials__h1 {
+    margin-top: -3rem;
+  }
+
+  .img-cover {
+    display: none;
+  }
+
+  .contact {
+    margin-top: -3rem;
+  }
+
+  .contact-center__h2 {
+    display: none;
+  }
+
+  .contact-center__p {
+    display: none;
+  }
+
+  .div__contacts__contact-center {
+    margin-top: -6rem;
+  }
+
+  .fa-hand-scissors {
+    display: none;
+  }
+
+  .content__h3 {
+    display: none;
+  }
+
+  .content__span {
+    display: none;
+  }
+
+  .div__contacts {
+    margin-left: 17rem;
+  }
+
+  .section-theme__h1 {
+    margin-top: -5rem;
+  }
+
+  .schedule__img {
+    display: none;
+  }
+
+  .opening-hours__ul {
+    margin-top: -13rem;
+    margin-left: -1.5rem;
+  }
+
+  .iframe {
+    height: 67vh;
+  }
+}
+
+/* Special for iPhone 6/7/8 - not landscape view */
+@media only screen and (max-device-width: 375px) and (max-height: 667px) {
+  .btn.about-center__btn {
+    display: none;
+  }
+
+  .about-center__p {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .my-services__section {
+    height: 93vh;
+  }
+
+  .skills-center_h3 {
+      display: none;
+  }
+  .p__reviews {
+    margin-top: 14rem;
+    margin-left: 7rem;
+    margin-right: -1rem;
+  }
+
+  .a__reviews {
+    margin-top: 3rem;
+    margin-left: 15rem;
   }
 }

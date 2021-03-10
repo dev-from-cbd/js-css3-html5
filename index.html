@@ -186,10 +186,14 @@
 
             <ul class="nav-list">
               <li class="nav-item">
-                <a href="#home" class="nav-link scroll-link nav-link__home">Home</a>
+                <a href="#home" class="nav-link scroll-link nav-link__home"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a href="#about" class="nav-link scroll-link nav-link__about-me">About me</a>
+                <a href="#about" class="nav-link scroll-link nav-link__about-me"
+                  >About me</a
+                >
               </li>
               <li class="nav-item">
                 <a href="#services" class="nav-link scroll-link">Services</a>
@@ -263,6 +267,7 @@
     <!-- Main -->
     <section class="section about" id="about">
       <div class="title">
+        <div class="up"></div>
         <h1 class="title__h1">About me</h1>
       </div>
 
@@ -367,7 +372,7 @@
             <i class="fas fa-cut services-center__icon"></i>
           </span>
           <h2>Stylish Scissors Haircut</h2>
-          <p>$45</p>
+          <p class="scissors">$45</p>
         </div>
       </div>
     </section>
@@ -450,7 +455,7 @@
     </section>
 
     <!-- Terms -->
-    <section class="section theme" id="teams">
+    <section class="section theme testimonials__section" id="teams">
       <div class="title">
         <h1 class="testimonials__h1">Testimonials</h1>
       </div>
@@ -465,7 +470,7 @@
                     <img
                       src="images/bradley.png"
                       alt="Testimonial of Bradley"
-                      class="team__img-cover"
+                      class="team__img-cover teams-center__img"
                     />
                   </div>
                   <h3 class="team__h3">Bradley</h3>
@@ -478,10 +483,14 @@
               <li class="glide__slide">
                 <div class="team">
                   <div class="img-cover">
-                    <img src="images/joel.png" alt="Testimonial of Joel" />
+                    <img
+                      src="images/joel.png"
+                      alt="Testimonial of Joel"
+                      class="teams-center__img"
+                    />
                   </div>
                   <h3>Joel</h3>
-                  <p>
+                  <p class="glide__slide__p">
                     I was looking for a good barber who does an amazing fade cut
                   </p>
                 </div>
@@ -490,7 +499,11 @@
               <li class="glide__slide">
                 <div class="team">
                   <div class="img-cover">
-                    <img src="images/wawed.png" alt="Testimonial of Wawed" />
+                    <img
+                      src="images/wawed.png"
+                      alt="Testimonial of Wawed"
+                      class="teams-center__img"
+                    />
                   </div>
                   <h3>Wawed</h3>
                   <p>incredible skills at this barber shop i had experienced</p>
@@ -506,7 +519,7 @@
     <div id="contacts"></div>
     <section class="section contact" id="contact">
       <div class="title">
-        <h1>Contacts</h1>
+        <h1 class="contacts__h1">Contacts</h1>
       </div>
 
       <div class="contact-center container">
@@ -525,8 +538,8 @@
               <i class="far fa-hand-scissors"></i>
             </span>
             <span class="content">
-              <h3>Barber in Bendigo</h3>
-              <span> Alex W </span>
+              <h3 class="content__h3">Barber in Bendigo</h3>
+              <span class="content__span"> Alex W </span>
             </span>
           </div>
 
@@ -583,9 +596,12 @@
     </section>
 
     <!-- Opening hours -->
-    <section class="section theme" id="opening-hours">
+    <section
+      class="section theme section-theme__opening-hours"
+      id="opening-hours"
+    >
       <div class="title">
-        <h1>Opening hours</h1>
+        <h1 class="section-theme__h1">Opening hours</h1>
       </div>
 
       <div class="schedule">
