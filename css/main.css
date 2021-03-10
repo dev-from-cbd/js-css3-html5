@@ -1907,7 +1907,7 @@ a.btn:active {
   }
 
   .skills-center_h3 {
-      display: none;
+    display: none;
   }
   .p__reviews {
     margin-top: 14rem;
@@ -1919,4 +1919,8 @@ a.btn:active {
     margin-top: 3rem;
     margin-left: 15rem;
   }
+}
+
+/* Special for iPhone iPhone XS Max - 1242x2688 - not landscape view */
+@media only screen and (max-device-width: 1242px) and (max-height: 2688px) and (min-device-width: 1242px) and (min-height: 2688px) {
 }
