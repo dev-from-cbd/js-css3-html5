@@ -1930,6 +1930,14 @@ a.btn:active {
   .about-center__h1 {
     display: none;
   }
+
+  .title__h1 {
+    margin-top: -3rem;
+  }
+
+  .about-center__p {
+    margin-top: -9rem;
+  }
 }
 
 /* Special for Pixel 2 XL - andscape view */
