@@ -1926,11 +1926,23 @@ a.btn:active {
   .banner {
     display: none;
   }
+
+  .about-center__h1 {
+    display: none;
+  }
 }
 
 /* Special for Pixel 2 XL - andscape view */
 @media only screen and (max-device-width: 823px) and (max-height: 411px) and (min-device-width: 823px) and (min-height: 411px) {
   .banner {
+    display: none;
+  }
+
+  .nav-link__home {
+    display: none;
+  }
+
+  .nav-link__about-me {
     display: none;
   }
 }
